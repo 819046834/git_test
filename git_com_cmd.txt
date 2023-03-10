@@ -1,0 +1,20 @@
+set -x
+case $1 in
+    h) echo  "usage:
+    0: git status;git diff
+    1: git status;git reset HEAD^;git checkout .;git status;git pull;git status
+    2: git status;git add .;git commit ;repo upload .;git status
+    3: git status;git add .;git commit --amend ;repo upload .;git status
+    4: git status;git pull;git status
+    "
+    ;;
+    0) git status;git diff
+    ;;
+    1) git status;git reset HEAD^;git checkout .;git status;git pull;git status
+    ;;
+    2) git status;git add .;git commit ;repo upload .;git status
+    ;;
+    3) git status;git add .;git commit --amend ;repo upload .;git status
+    ;;
+    4) git status;git pull;git status
+esac
